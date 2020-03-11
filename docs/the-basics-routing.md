@@ -124,7 +124,7 @@ async function App(context) {
 Payload events typically happen when users send payload data by clicking buttons, selecting menus, or clicking keyboards. For example, you may catch `GET_STARTED` payload that send by button click and respond with `SayHi` action:
 
 ```js
-const { router, payload } = require('bottender/router');
+const { router, payload, route } = require('bottender/router');
 
 async function App(context) {
   return router([
